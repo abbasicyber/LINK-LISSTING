@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+class Node{
+    public:
+    int data;
+    Node*next;
+};
+void print_List(Node*n)
+{
+    cout << "Print List of Node"<< endl;
+    
+    while(n!=NULL ){
+        cout <<n->data<<endl;
+        n=n->next;
+    }
+}
+int main()
+{
+    
+   
+  /* cout << "head data "<<head->data<< endl;
+   cout << "second data "<<second->data<< endl;
+    */
+    print_List(head);
+    
+    
+    
+    return 0;
+}
